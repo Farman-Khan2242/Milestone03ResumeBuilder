@@ -72,9 +72,9 @@ img {
     width: 200px;
     border-radius: 50%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px; /* Space below the image */
 }
 .buttons {
-    display: none; /* Hide initially */
     width: 120px;
     height: 35px;
     background-color: #28a745;
@@ -83,6 +83,7 @@ img {
     border-radius: 5px;
     font-weight: 700;
     transition: background-color 0.3s ease;
+    margin-top: 10px; /* Space above the buttons */
 }
 .buttons:hover {
     background-color: #218838;
@@ -94,4 +95,20 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+/* Styles for the lists in resumeOutput */
+.eduDiv, .skillDiv, .expDivs {
+    margin: 5px 0; /* Space between items */
+    padding: 10px;
+    width: 100%;
+    background-color: #f9f9f9; /* Light background for items */
+    border: 1px solid #ddd; /* Border around items */
+    border-radius: 5px; /* Rounded corners for items */
+}
+
+/* Specific styles for eduList, skillsList, and expList */
+#eduList, #skillsList, #expList {
+    margin-top: 10px;
+    width: 100%; /* Full width */ /* Initially hidden, controlled by buttons */
 }
